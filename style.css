@@ -1,6 +1,6 @@
 /* ===========================================
    WEBSITE DESA SIMARMATA
-   Theme Color : Maroon
+   Theme Color : #7c0e0e
 =========================================== */
 
 *{
@@ -17,7 +17,6 @@ html{
 body{
     background:#f8f9fa;
     color:#333;
-    overflow-x:hidden;
 }
 
 .container{
@@ -25,49 +24,44 @@ body{
     padding-bottom:10px;
 }
 
-/* ================= NAVBAR ================= */
+/* Navbar */
 
 .navbar{
-    background:#800000 !important;
+    background:linear-gradient(90deg,#7c0e0e,#a11414)!important;
     box-shadow:0 4px 15px rgba(0,0,0,.2);
 }
 
 .navbar-brand{
     font-size:24px;
     font-weight:bold;
-    color:#fff !important;
 }
 
 .nav-link{
-    color:#fff !important;
+    color:white!important;
     margin-left:10px;
     transition:.3s;
 }
 
 .nav-link:hover{
-    color:#ffd54f !important;
+    color:#ffd54f!important;
 }
 
 .nav-link.active{
-    color:#ffd54f !important;
+    color:#ffd54f!important;
     font-weight:bold;
 }
 
-/* ================= HEADER ================= */
+/* Header */
 
 .bg-primary{
-    background:#800000 !important;
-}
-
-.bg-dark{
-    background:#5a0000 !important;
+    background:linear-gradient(90deg,#7c0e0e,#a11414)!important;
 }
 
 section{
     padding:30px 0;
 }
 
-/* ================= HERO ================= */
+/* Hero */
 
 .hero{
     height:55vh;
@@ -77,7 +71,7 @@ section{
     justify-content:center;
     align-items:center;
     text-align:center;
-    color:#fff;
+    color:white;
 }
 
 .hero h1{
@@ -90,14 +84,13 @@ section{
     font-size:22px;
 }
 
-/* ================= CARD ================= */
+/* Card */
 
 .card{
     border:none;
     border-radius:15px;
     overflow:hidden;
     transition:.4s;
-    margin-bottom:20px;
 }
 
 .card:hover{
@@ -112,30 +105,29 @@ section{
 
 .card-body h4,
 .card-body h5{
-    color:#800000;
+    color:#7c0e0e;
     font-weight:bold;
 }
 
-/* ================= BUTTON ================= */
+/* Tombol */
 
 .btn-primary{
-    background:#800000;
-    border-color:#800000;
+    background:#7c0e0e;
+    border:#7c0e0e;
 }
 
 .btn-primary:hover{
-    background:#5a0000;
-    border-color:#5a0000;
+    background:#5b0909;
 }
 
 .btn-outline-primary{
-    color:#800000;
-    border-color:#800000;
+    color:#7c0e0e;
+    border-color:#7c0e0e;
 }
 
 .btn-outline-primary:hover{
-    background:#800000;
-    color:#fff;
+    background:#7c0e0e;
+    color:white;
 }
 
 .btn-success{
@@ -147,40 +139,46 @@ section{
     background:#1ebc59;
 }
 
-/* ================= HEADING ================= */
+/* Heading */
 
-h1,h2,h3,h4,h5{
+h2{
+    color:#7c0e0e;
     font-weight:bold;
-}
-
-h2,
-h3,
-h4{
-    color:#800000;
     margin-bottom:15px;
 }
 
-.text-primary{
-    color:#800000 !important;
+h3{
+    color:#7c0e0e;
+    font-weight:bold;
 }
 
-/* ================= TABLE ================= */
+h4{
+    font-weight:bold;
+}
+
+/* Statistik */
+
+.text-primary{
+    color:#7c0e0e!important;
+}
+
+/* Table */
 
 .table{
-    background:#fff;
+    background:white;
     border-radius:10px;
     overflow:hidden;
 }
 
-/* ================= LIST ================= */
+/* List */
 
 .list-group-item{
     border:none;
-    border-left:5px solid #800000;
+    border-left:5px solid #7c0e0e;
     margin-bottom:8px;
 }
 
-/* ================= FORM ================= */
+/* Form */
 
 .form-control{
     border-radius:10px;
@@ -188,39 +186,37 @@ h4{
 }
 
 .form-control:focus{
-    border-color:#800000;
-    box-shadow:0 0 0 .25rem rgba(128,0,0,.25);
+    border-color:#7c0e0e;
+    box-shadow:0 0 0 .25rem rgba(124,14,14,.25);
 }
 
 textarea{
     resize:none;
 }
 
-/* ================= MAP ================= */
+/* Maps */
 
 iframe{
     border-radius:15px;
 }
 
-/* ================= FOOTER ================= */
+/* Footer */
 
 footer{
-    background:#800000 !important;
-    color:#fff;
+    background:linear-gradient(90deg,#7c0e0e,#a11414)!important;
+    color:white;
     padding:20px 0;
     margin-top:15px;
 }
 
-footer h4,
-footer h5{
-    color:#fff;
+footer h4{
+    color:white;
 }
 
-/* ================= IMAGE ================= */
+/* Gambar */
 
 img{
     max-width:100%;
-    display:block;
 }
 
 .gallery img{
@@ -232,13 +228,13 @@ img{
     transform:scale(1.05);
 }
 
-/* ================= SHADOW ================= */
+/* Shadow */
 
 .shadow{
     box-shadow:0 10px 20px rgba(0,0,0,.15)!important;
 }
 
-/* ================= SCROLLBAR ================= */
+/* Scrollbar */
 
 ::-webkit-scrollbar{
     width:10px;
@@ -249,15 +245,71 @@ img{
 }
 
 ::-webkit-scrollbar-thumb{
-    background:#800000;
+    background:#7c0e0e;
     border-radius:20px;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background:#5a0000;
+    background:#5b0909;
 }
 
-/* ================= SPACING ================= */
+/* Responsive */
+
+@media(max-width:992px){
+
+.hero h1{
+font-size:45px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+height:60vh;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.card img{
+height:200px;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+font-size:28px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+section{
+padding:40px 15px;
+}
+
+.card img{
+height:180px;
+}
+
+.navbar-brand{
+font-size:20px;
+}
+
+}
 
 p{
     margin-bottom:10px;
@@ -267,69 +319,10 @@ p{
     margin-bottom:10px;
 }
 
-/* ================= RESPONSIVE ================= */
-
-@media(max-width:992px){
-
-.hero h1{
-    font-size:45px;
+.card{
+    margin-bottom:20px;
 }
 
-.hero p{
-    font-size:20px;
-}
-
-}
-
-@media(max-width:768px){
-
-.hero{
-    height:60vh;
-}
-
-.hero h1{
-    font-size:35px;
-}
-
-.hero p{
-    font-size:18px;
-}
-
-.card img{
-    height:200px;
-}
-
-section{
-    padding:25px 0;
-}
-
-}
-
-@media(max-width:576px){
-
-.hero h1{
-    font-size:28px;
-}
-
-.hero p{
-    font-size:16px;
-}
-
-section{
-    padding:20px 15px;
-}
-
-.card img{
-    height:180px;
-}
-
-.navbar-brand{
-    font-size:20px;
-}
-
-.nav-link{
-    margin-left:0;
-    padding:8px 0;
-}
-
+img{
+    display:block;
 }
