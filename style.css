@@ -326,3 +326,118 @@ p{
 img{
     display:block;
 }
+
+/* ===========================
+   STRUKTUR ORGANISASI
+=========================== */
+
+.struktur{
+    background:#f8f9fa;
+}
+
+.org-chart{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.level{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    width:100%;
+}
+
+.level.dua{
+    justify-content:space-evenly;
+}
+
+.level.empat{
+    justify-content:space-between;
+}
+
+.level.tiga{
+    justify-content:space-evenly;
+}
+
+.line{
+    width:4px;
+    height:40px;
+    background:#7c0e0e;
+    margin:15px 0;
+    border-radius:5px;
+}
+
+.org-card{
+    width:240px;
+    background:#fff;
+    border-radius:18px;
+    padding:22px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.35s;
+    border-top:5px solid #7c0e0e;
+}
+
+.org-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(124,14,14,.25);
+}
+
+.org-card i{
+    font-size:45px;
+    color:#7c0e0e;
+    margin-bottom:15px;
+}
+
+.org-card h5,
+.org-card h6{
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.org-card p{
+    margin:0;
+    color:#666;
+    font-weight:500;
+}
+
+.kepala{
+    background:linear-gradient(135deg,#7c0e0e,#b32020);
+    color:#fff;
+}
+
+.kepala i,
+.kepala p{
+    color:#fff;
+}
+
+.sekretaris{
+    border-top:5px solid #0d6efd;
+}
+
+.dusun{
+    border-top:5px solid #198754;
+}
+
+@media(max-width:768px){
+
+.level,
+.level.dua,
+.level.empat,
+.level.tiga{
+    flex-direction:column;
+    align-items:center;
+}
+
+.org-card{
+    width:100%;
+    max-width:330px;
+}
+
+.line{
+    height:25px;
+}
+
+}
